@@ -1,0 +1,31 @@
+.navbar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+.navbar-light .navbar-brand {
+    color: #2CDE82 !important;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
+    color: black !important;
+    margin-left: 10px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #2CDE82 !important;
+}
+.navbar-light .navbar-nav .nav-link span {
+    color: white;
+}
+.sign-up{
+    border-radius: 20px;
+    padding: 7px 120px;
+    background: linear-gradient(#2CDE82,rgb(155, 231, 192));
+    color: #ffffff !important;
+}
