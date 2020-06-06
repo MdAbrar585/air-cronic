@@ -1,0 +1,30 @@
+.location-details{
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 10px;
+    align-items: center;
+    margin-left: 250px;
+    border-radius: 13px;
+}
+.location-details p{
+    border-right: 1px solid lightgray;
+    padding-right: 8px;
+    padding-left: 10px;
+}
+@media (max-width: 575.98px) { 
+    .location-details {
+        display: flex;
+        border: 1px solid lightgray;
+        padding: 10px;
+        align-items: center;
+        margin-left: 0px !important;
+        border-radius: 13px;
+    }
+    .location-details p {
+        border-right: 1px solid lightgray;
+        padding-right: 2px;
+        padding-left: 1px;
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+  }

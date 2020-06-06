@@ -1,0 +1,45 @@
+.category{
+    display: flex;
+}
+.category-btn{
+    border: 1px solid;
+    width: auto;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 2px;
+}
+.category-btn:hover{
+    background: gray;
+    color: greenyellow !important;
+}
+.location-view-body{
+    margin-top: 20px;
+}
+.location-view-details img{
+    width:100%;
+    border-radius: 10px;
+}
+.location-pricing h6{
+    font-size: 14px;
+    font-weight: 700;
+}
+.location-pricing p{
+    font-size: 12px;
+}
+.pricing{
+    font-weight: 600;
+}
+.pricing span{
+    color: lightgrey;
+}
+.pricing .icon{
+    color: lime;
+    margin: 2px;
+}
+@media (max-width: 575.98px) { 
+    .category{
+        display: inline;
+        margin: 2px;
+    }
+}

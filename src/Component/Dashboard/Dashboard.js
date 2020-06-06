@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Dashboard.scss';
 import 'moment/locale/fr.js' 
-import { DatePickerInput } from 'rc-datepicker';
 import 'rc-datepicker/lib/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
 import logo1 from '../../images/201916769776917542.jpg';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     const [formData, setFormData] = useState({
@@ -14,14 +14,14 @@ const Dashboard = () => {
         child: 0,
         babies: 0,
     });
-    const { location, arrival, departure, adults, child, babies } = formData;
+    const {  arrival, departure, adults, child, babies } = formData;
     const onChangeHandler = (e) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value,
         });
     };
-
+    console.log(formData);
     return (
         <div className="container">
             <div className="row">
@@ -98,7 +98,9 @@ const Dashboard = () => {
                         </div>
 
                         <div className="d-flex justify-content-end">
+                            <Link to="/location">
                             <button className="apply-btn">APPLY</button>
+                            </Link>
                         </div>
                         <div className="search-btn d-flex justify-content-center">
                             <FontAwesomeIcon icon={faSearch} /> <p>Search</p>
@@ -116,7 +118,7 @@ const Dashboard = () => {
                     <div class="row">
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
@@ -135,7 +137,7 @@ const Dashboard = () => {
 
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
@@ -154,7 +156,7 @@ const Dashboard = () => {
 
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
@@ -172,7 +174,7 @@ const Dashboard = () => {
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
@@ -198,7 +200,7 @@ const Dashboard = () => {
                     <div class="row">
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
@@ -217,7 +219,7 @@ const Dashboard = () => {
 
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
@@ -236,7 +238,7 @@ const Dashboard = () => {
 
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
@@ -254,7 +256,7 @@ const Dashboard = () => {
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img class="card-img-top" src={logo1} alt="Card image cap" />
+                                <img class="card-img-top" src={logo1} alt="" />
                                 <div class="card-body">
                                     <p class="card-text"> <small>Night life-New York</small></p>
                                     <h6 class="card-title">Discover the city's party scene</h6>
