@@ -1,0 +1,27 @@
+div {
+    height: 100%;
+}
+.ship-form img {
+    width: 250px;
+    padding-bottom: 65px;
+    margin-left: 450px;
+}
+.ship-form {
+    margin: 0px 81px;
+}
+form {
+    margin-left: 450px;
+}
+
+.ship-form input {
+    display: block;
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.error {
+    color: #11d670;
+}
