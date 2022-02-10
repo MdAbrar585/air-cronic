@@ -16,7 +16,7 @@
     "bootstrap": "^4.5.0",
     "firebase-config": "0.0.2",
     "google-maps-react": "^2.0.6",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "rc-datepicker": "^5.0.16",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
